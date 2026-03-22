@@ -35,22 +35,32 @@ export default function Home() {
         </p>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8 leading-tight">
           <span className="bg-gradient-to-r from-indigo-400 to-indigo-200 bg-clip-text text-transparent">
             {t.heroTitle}
           </span>
         </h1>
 
-        {/* Why Harness — explanation block */}
+        {/* Problem block */}
+        <div className="mb-8 pl-4 border-l-2 border-indigo-500/30 max-w-xl">
+          <p className="text-base font-semibold text-[var(--color-text)] mb-2">
+            {t.heroProblemQ}
+          </p>
+          <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+            {t.heroProblemBody}
+          </p>
+        </div>
+
+        {/* Insight + Solution */}
         <div className="space-y-2 mb-8 max-w-xl">
-          <p className="text-base font-medium text-[var(--color-text)]">
-            {t.heroWhy1}
+          <p className="text-sm text-[var(--color-text-muted)]">
+            {t.heroInsight1}
           </p>
           <p className="text-base text-[var(--color-text-secondary)] leading-relaxed">
-            {t.heroWhy2}
+            {t.heroInsight2}
           </p>
-          <p className="text-base text-[var(--color-text-secondary)] leading-relaxed">
-            {t.heroWhy3}
+          <p className="text-base font-medium text-[var(--color-text)] leading-relaxed">
+            {t.heroInsight3}
           </p>
         </div>
 
@@ -72,9 +82,9 @@ export default function Home() {
           })}
         </div>
 
-        {/* Story hook */}
-        <p className="text-sm text-[var(--color-text-muted)] max-w-xl">
-          {t.heroWhy4}
+        {/* Outcome promise */}
+        <p className="text-sm text-indigo-400/80 max-w-xl leading-relaxed">
+          {t.heroOutcome}
         </p>
       </section>
 
