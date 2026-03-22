@@ -78,7 +78,6 @@ export default function UnitTabs({
   const handleTabChange = (tabId: "campfire" | "workshop" | "reflection") => {
     setActiveTab(tabId);
     setTocOpen(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Next tab logic
@@ -151,10 +150,10 @@ export default function UnitTabs({
 
   return (
     <div>
-      {/* Tab Navigation — sticky below header */}
+      {/* Tab Navigation */}
       <div
         ref={tabBarRef}
-        className="sticky top-14 z-20 bg-[var(--color-bg)]/95 backdrop-blur-sm pb-4 pt-2 -mx-2 px-2"
+        className="pb-4 pt-2"
       >
         <div
           className="flex items-center gap-1 p-1 bg-[var(--color-bg-secondary)] rounded-xl border border-[var(--color-border-subtle)]"
@@ -215,7 +214,11 @@ export default function UnitTabs({
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById(h.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                    const el = document.getElementById(h.id);
+                    if (el) {
+                      const top = el.getBoundingClientRect().top + window.scrollY - 72;
+                      window.scrollTo({ top, behavior: "smooth" });
+                    }
                   }}
                 >
                   {h.text}

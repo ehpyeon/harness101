@@ -120,7 +120,6 @@ export default function CreditsPage() {
 
               {/* Social links */}
               <div className="flex items-center gap-2">
-                <span className="text-xs text-[var(--color-text-muted)] mr-1">{t.creditsAuthorConnect}</span>
                 {SOCIAL_LINKS.map((link) => (
                   <a
                     key={link.label}
