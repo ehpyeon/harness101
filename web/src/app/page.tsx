@@ -42,17 +42,17 @@ export default function Home() {
         </h1>
 
         {/* Problem */}
-        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-6 max-w-xl">
+        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-6">
           {t.heroProblemBody}
         </p>
 
         {/* Insight */}
-        <p className="text-base text-[var(--color-text)] leading-relaxed mb-8 max-w-xl">
+        <p className="text-base text-[var(--color-text)] leading-relaxed mb-8">
           {t.heroInsight}
         </p>
 
         {/* Harness breakdown */}
-        <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl px-5 py-5 mb-6 max-w-xl">
+        <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl px-5 py-5 mb-6">
           {/* Formula header */}
           <div className="flex items-center gap-2 font-mono text-sm mb-4 flex-wrap">
             <span className="text-[var(--color-text-muted)]">Harness</span>
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
 
         {/* Closing */}
-        <p className="text-sm text-[var(--color-text-muted)] max-w-xl leading-relaxed">
+        <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
           {t.heroClosing}
         </p>
       </section>
