@@ -41,50 +41,86 @@ export default function Home() {
           </span>
         </h1>
 
-        {/* Problem block */}
-        <div className="mb-8 pl-4 border-l-2 border-indigo-500/30 max-w-xl">
-          <p className="text-base font-semibold text-[var(--color-text)] mb-2">
-            {t.heroProblemQ}
-          </p>
-          <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-            {t.heroProblemBody}
-          </p>
+        {/* Problem */}
+        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-6 max-w-xl">
+          {t.heroProblemBody}
+        </p>
+
+        {/* Insight */}
+        <p className="text-base text-[var(--color-text)] leading-relaxed mb-8 max-w-xl">
+          {t.heroInsight}
+        </p>
+
+        {/* Harness breakdown */}
+        <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl px-5 py-5 mb-6 max-w-xl">
+          {/* Formula header */}
+          <div className="flex items-center gap-2 font-mono text-sm mb-4 flex-wrap">
+            <span className="text-[var(--color-text-muted)]">Harness</span>
+            <span className="text-[var(--color-text-muted)]">=</span>
+            {(["tools", "knowledge", "context", "permissions"] as const).map((layer, i) => {
+              const ic = LAYER_ICONS[layer];
+              return (
+                <span key={layer} className="inline-flex items-center gap-1">
+                  {i > 0 && <span className="text-[var(--color-border)] mr-1">+</span>}
+                  <svg viewBox="0 0 16 16" fill={ic.color} className="w-3 h-3 flex-shrink-0">
+                    <path d={ic.path} fillRule="evenodd" clipRule="evenodd" />
+                  </svg>
+                  <span style={{ color: ic.color }} className="font-medium">{ic.label}</span>
+                </span>
+              );
+            })}
+          </div>
+
+          {/* Layer descriptions */}
+          <div className="space-y-3 border-t border-[var(--color-border-subtle)] pt-4">
+            {([
+              {
+                layer: "tools" as const,
+                desc: t.heroLayerTools,
+                chapters: [{ title: "MCPs", num: "09" }, { title: "Background", num: "07" }],
+              },
+              {
+                layer: "knowledge" as const,
+                desc: t.heroLayerKnowledge,
+                chapters: [{ title: "CLAUDE.md", num: "02" }, { title: "Skills", num: "04" }, { title: "Rules", num: "08" }, { title: "Memory", num: "13" }],
+              },
+              {
+                layer: "context" as const,
+                desc: t.heroLayerContext,
+                chapters: [{ title: "Tasks", num: "05" }, { title: "Agents", num: "06" }, { title: "Compact", num: "11" }, { title: "Teams", num: "12" }, { title: "Worktree", num: "13" }],
+              },
+              {
+                layer: "permissions" as const,
+                desc: t.heroLayerPermissions,
+                chapters: [{ title: "Hooks", num: "03" }, { title: "Security", num: "10" }],
+              },
+            ] as const).map(({ layer, desc, chapters }) => {
+              const ic = LAYER_ICONS[layer];
+              return (
+                <div key={layer} className="flex gap-3">
+                  <svg viewBox="0 0 16 16" fill={ic.color} className="w-3 h-3 flex-shrink-0 mt-[3px]">
+                    <path d={ic.path} fillRule="evenodd" clipRule="evenodd" />
+                  </svg>
+                  <div className="flex-1 min-w-0">
+                    <span style={{ color: ic.color }} className="text-xs font-semibold mr-1.5">{ic.label}:</span>
+                    <span className="text-xs text-[var(--color-text-secondary)]">{desc}</span>
+                    <div className="mt-1 flex flex-wrap gap-1.5">
+                      {chapters.map((ch) => (
+                        <span key={ch.num} className="text-[10px] text-[var(--color-text-muted)]/50 font-mono">
+                          {ch.title}({ch.num})
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Insight + Solution */}
-        <div className="space-y-2 mb-8 max-w-xl">
-          <p className="text-sm text-[var(--color-text-muted)]">
-            {t.heroInsight1}
-          </p>
-          <p className="text-base text-[var(--color-text-secondary)] leading-relaxed">
-            {t.heroInsight2}
-          </p>
-          <p className="text-base font-medium text-[var(--color-text)] leading-relaxed">
-            {t.heroInsight3}
-          </p>
-        </div>
-
-        {/* Harness Formula */}
-        <div className="inline-flex items-center gap-3 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl px-6 py-4 font-mono text-sm flex-wrap mb-6">
-          <span className="text-[var(--color-text-muted)]">Harness</span>
-          <span className="text-[var(--color-text-muted)]">=</span>
-          {(["tools", "knowledge", "context", "permissions"] as const).map((layer, i) => {
-            const ic = LAYER_ICONS[layer];
-            return (
-              <span key={layer} className="inline-flex items-center gap-1">
-                {i > 0 && <span className="text-[var(--color-border)] mr-1">+</span>}
-                <svg viewBox="0 0 16 16" fill={ic.color} className="w-3.5 h-3.5 flex-shrink-0">
-                  <path d={ic.path} fillRule="evenodd" clipRule="evenodd" />
-                </svg>
-                <span style={{ color: ic.color }} className="font-medium">{ic.label}</span>
-              </span>
-            );
-          })}
-        </div>
-
-        {/* Outcome promise */}
-        <p className="text-sm text-indigo-400/80 max-w-xl leading-relaxed">
-          {t.heroOutcome}
+        {/* Closing */}
+        <p className="text-sm text-[var(--color-text-muted)] max-w-xl leading-relaxed">
+          {t.heroClosing}
         </p>
       </section>
 
