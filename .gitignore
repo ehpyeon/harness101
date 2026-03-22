@@ -1,0 +1,36 @@
+# web 버전만 유지, 나머지 ignore
+.claude/
+Documents/
+AGENTS.md
+.mcp.json
+CLAUDE.md
+
+# 개인/머신별 로컬 설정
+*.local.json
+*.local.yaml
+*.local.yml
+.env
+.env.*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 에디터
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# 의존성
+node_modules/
+
+# Next.js 빌드 아티팩트
+.next/
+out/
+
+# 로그
+*.log
+npm-debug.log*
+.vercel
