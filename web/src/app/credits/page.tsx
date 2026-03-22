@@ -101,42 +101,31 @@ export default function CreditsPage() {
         </h2>
 
         <div className="p-6 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
-          <div className="flex items-start gap-5">
-            {/* Avatar */}
-            <img
-              src="https://avatars.githubusercontent.com/u/19993280?s=400&u=0a4178db402327f38f5a2729dd9e173da63271ec&v=4"
-              alt="Euihyeon Pyeon"
-              className="w-14 h-14 rounded-xl object-cover flex-shrink-0"
-            />
+          <div className="flex items-center gap-2 mb-1">
+            <span className="font-semibold text-[var(--color-text)] text-lg">Euihyeon Pyeon</span>
+            <span className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+              Author
+            </span>
+          </div>
+          <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-4">
+            {t.creditsAuthorBio}
+          </p>
 
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="font-semibold text-[var(--color-text)] text-lg">Euihyeon Pyeon</span>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
-                  Author
-                </span>
-              </div>
-              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-4">
-                {t.creditsAuthorBio}
-              </p>
-
-              {/* Social links */}
-              <div className="flex items-center gap-2">
-                {SOCIAL_LINKS.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={link.label}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs text-[var(--color-text-muted)] border border-[var(--color-border)] transition-all ${link.color}`}
-                  >
-                    {link.icon}
-                    <span>{link.label}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
+          {/* Social links */}
+          <div className="flex items-center gap-2">
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.label}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs text-[var(--color-text-muted)] border border-[var(--color-border)] transition-all ${link.color}`}
+              >
+                {link.icon}
+                <span>{link.label}</span>
+              </a>
+            ))}
           </div>
         </div>
       </section>
