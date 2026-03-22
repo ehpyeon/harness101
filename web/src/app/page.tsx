@@ -28,23 +28,34 @@ export default function Home() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
       {/* Hero */}
-      <section className="text-center mb-20">
-        <p className="text-sm text-[var(--color-text-muted)] mb-4 tracking-wide">
-          {t.heroSubtitle}
+      <section className="mb-20">
+        {/* Eyebrow */}
+        <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400/70 mb-5">
+          {t.heroEyebrow}
         </p>
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-5 leading-tight">
+
+        {/* Title */}
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
           <span className="bg-gradient-to-r from-indigo-400 to-indigo-200 bg-clip-text text-transparent">
             {t.heroTitle}
           </span>
         </h1>
-        <p className="text-base text-[var(--color-text-secondary)] max-w-lg mx-auto leading-relaxed">
-          {t.heroDesc1}
-          <br />
-          {t.heroDesc2} <em className="text-indigo-400 not-italic font-medium">{t.heroDesc3}</em>{t.heroDesc4}
-        </p>
 
-        {/* Harness Formula with icons */}
-        <div className="mt-10 inline-flex items-center gap-3 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl px-6 py-4 font-mono text-sm flex-wrap justify-center">
+        {/* Why Harness — explanation block */}
+        <div className="space-y-2 mb-8 max-w-xl">
+          <p className="text-base font-medium text-[var(--color-text)]">
+            {t.heroWhy1}
+          </p>
+          <p className="text-base text-[var(--color-text-secondary)] leading-relaxed">
+            {t.heroWhy2}
+          </p>
+          <p className="text-base text-[var(--color-text-secondary)] leading-relaxed">
+            {t.heroWhy3}
+          </p>
+        </div>
+
+        {/* Harness Formula */}
+        <div className="inline-flex items-center gap-3 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl px-6 py-4 font-mono text-sm flex-wrap mb-6">
           <span className="text-[var(--color-text-muted)]">Harness</span>
           <span className="text-[var(--color-text-muted)]">=</span>
           {(["tools", "knowledge", "context", "permissions"] as const).map((layer, i) => {
@@ -60,6 +71,11 @@ export default function Home() {
             );
           })}
         </div>
+
+        {/* Story hook */}
+        <p className="text-sm text-[var(--color-text-muted)] max-w-xl">
+          {t.heroWhy4}
+        </p>
       </section>
 
       {/* Progress */}

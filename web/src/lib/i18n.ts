@@ -16,12 +16,17 @@ export const translations = {
     creditsLink: "Credits & Author",
 
     // Home page
+    heroEyebrow: "왜 Harness인가?",
     heroSubtitle: "스토리텔링으로 배우는 Claude Code",
     heroTitle: "Harness 101",
     heroDesc1: "2년차 개발자 지민이 Claude Code를 만나고,",
     heroDesc2: "도구 사용자에서",
     heroDesc3: "Harness Engineer",
     heroDesc4: "가 되기까지.",
+    heroWhy1: "Claude(모델)는 이미 에이전트입니다.",
+    heroWhy2: "중요한 건 모델 자체가 아니라, 그 에이전트가 일하는 환경 —",
+    heroWhy3: "그것을 이해하고 설계하는 것이 Harness Engineering입니다.",
+    heroWhy4: "네 가지 핵심 레이어를 지민의 이야기를 통해 하나씩 풀어갑니다.",
     progressLabel: "학습 진행률",
     footerQuote: "The Model IS the Agent. The Code IS the Harness.",
 
@@ -120,12 +125,17 @@ export const translations = {
     creditsLink: "Credits & Author",
 
     // Home page
+    heroEyebrow: "Why Harness?",
     heroSubtitle: "Learning Claude Code through Storytelling",
     heroTitle: "Harness 101",
     heroDesc1: "A second-year developer meets Claude Code,",
     heroDesc2: "transforming from a casual user into a",
     heroDesc3: "Harness Engineer",
     heroDesc4: ".",
+    heroWhy1: "Claude is already an agent.",
+    heroWhy2: "What matters isn't the model itself — it's the environment where that agent works.",
+    heroWhy3: "Understanding and shaping that environment is Harness Engineering.",
+    heroWhy4: "Explore each of the four core layers through Jimin's story.",
     progressLabel: "Learning Progress",
     footerQuote: "The Model IS the Agent. The Code IS the Harness.",
 

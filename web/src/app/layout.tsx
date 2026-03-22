@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </div>
                   <div className="flex flex-col leading-tight">
                     <span className="font-semibold text-sm text-[var(--color-text)]">Harness 101</span>
-                    <span className="text-[10px] text-[var(--color-text-muted)] hidden sm:block">Master the Agent&apos;s Work Environment</span>
+                    <span className="text-[10px] text-[var(--color-text-muted)] hidden sm:block">에이전트 작업 환경 이해하기</span>
                   </div>
                 </a>
 
