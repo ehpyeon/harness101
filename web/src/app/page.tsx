@@ -194,7 +194,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="text-center text-xs text-[var(--color-text-muted)]/40 border-t border-[var(--color-border-subtle)] pt-10 pb-8">
         <p className="italic">&ldquo;{t.footerQuote}&rdquo;</p>
-        <Link href="/credits" className="mt-3 inline-block text-[var(--color-text-muted)]/30 hover:text-[var(--color-text-muted)] transition-colors">
+        <Link href="/credits" className="mt-3 inline-block text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors">
           {t.creditsLink}
         </Link>
       </footer>
