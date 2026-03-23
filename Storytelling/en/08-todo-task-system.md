@@ -310,11 +310,11 @@ Evolution of the Context layer:
 This isn't just "adding a notes feature." The way the Agent Loop manages Context has changed.
 
 ```
-From s07 onward, the Task System became the coordination backbone for all subsequent concepts:
-  - s08 Background Tasks → which tasks to run in the background
-  - s09 Agent Teams → the task board shared by teammates
-  - s11 Autonomous Agents → teammates picking tasks automatically
-  - s12 Worktree Isolation → assigning an independent directory to each task
+From Ch05 onward, the Task System became the coordination backbone for all subsequent concepts:
+  - Ch07 Background Tasks → which tasks to run in the background
+  - Ch12 Agent Teams → the task board shared by teammates
+  - Ch12 Autonomous Agents → teammates picking tasks automatically
+  - Ch13 Worktree Isolation → assigning an independent directory to each task
 ```
 
 ---

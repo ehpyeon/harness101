@@ -15,7 +15,7 @@
 
 Two days until launch.
 
-Jimin ran three agents simultaneously with Agent Teams (Ch10).
+Jimin ran three agents simultaneously with Agent Teams (Ch12).
 
 ```
 backend-agent:  implementing payment API — modifying src/auth/middleware.ts
@@ -95,7 +95,7 @@ Really, none. **Each agent has been given their own room.** They live in the sam
 
 ## Control Plane / Execution Plane
 
-Connecting worktree to the Task System (Ch08) yields a powerful structure:
+Connecting worktree to the Task System (Ch05) yields a powerful structure:
 
 ```
 Control Plane (.tasks/):
@@ -175,7 +175,7 @@ The project's `settings.json` has worktree lifecycle hooks configured:
 ```
 
 When a worktree is created, a sound plays; when removed, a log is written.
-The Permissions layer from Ch02 (Hooks) is active here too.
+The Permissions layer from Ch03 (Hooks) is active here too.
 
 ---
 
@@ -214,14 +214,14 @@ cat .tasks/events.jsonl | jq 'select(.agent == "backend-agent")'
 
 At this point, Jimin started to see the big picture.
 
-In Ch04 (Agents), **messages were isolated**. Starting with `messages=[]` to block noise.
+In Ch06 (Agents), **messages were isolated**. Starting with `messages=[]` to block noise.
 Here, **files are isolated**. git worktree to block conflicts.
 Going deeper? **Processes are isolated**. Containers to block system-level risks.
 
 ```
 Three layers of isolation — same principle, different depth:
 
-Layer 1: Message isolation (Ch04)
+Layer 1: Message isolation (Ch06)
   messages=[] → prevents context pollution
   Target: Claude's short-term memory
 

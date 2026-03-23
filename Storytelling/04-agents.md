@@ -313,7 +313,7 @@ Claude는 이 description을 보고 스스로 판단한다:
 
 에이전트에게 Tools와 Model을 줬다. 그런데 **Knowledge도 줄 수 있다.**
 
-03-skills.md에서 배운 Skills는 사용자가 `/commit`으로 호출한다.
+Ch04(Skills)에서 배운 Skills는 사용자가 `/commit`으로 호출한다.
 하지만 에이전트의 `.md` 파일 안에 직접 Knowledge를 넣으면?
 
 ```

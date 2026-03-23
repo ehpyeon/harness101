@@ -328,10 +328,10 @@ Context 오염도 줄었다:
   이후: 완료된 결과만 Context에 진입
 ```
 
-00에서 시작된 Agent Loop의 여정을 되돌아보면:
+Ch01에서 시작된 Agent Loop의 여정을 되돌아보면:
 
 ```
-Agent Loop (Ch00):  Claude가 도구를 쓸 수 있게 됐다
+Agent Loop (Ch01):  Claude가 도구를 쓸 수 있게 됐다
   → Background Tasks (여기): I/O를 병렬화했다
   → Autonomous Loops:         사람이 루프 밖으로 나갔다
 ```

@@ -310,11 +310,11 @@ Context 레이어의 진화:
 단순히 "메모 기능"이 생긴 게 아니다. Agent Loop의 Context 관리 방식이 바뀌었다.
 
 ```
-s07부터 Task System은 후속 모든 개념의 조율 백본이 됐다:
-  - s08 Background Tasks → 어떤 작업을 백그라운드로 실행할지
-  - s09 Agent Teams → 팀원들이 공유하는 작업 보드
-  - s11 Autonomous Agents → 팀원이 자동으로 작업 선택
-  - s12 Worktree Isolation → 각 작업마다 독립 디렉토리 배정
+Ch05부터 Task System은 후속 모든 개념의 조율 백본이 됐다:
+  - Ch07 Background Tasks → 어떤 작업을 백그라운드로 실행할지
+  - Ch12 Agent Teams → 팀원들이 공유하는 작업 보드
+  - Ch12 Autonomous Agents → 팀원이 자동으로 작업 선택
+  - Ch13 Worktree Isolation → 각 작업마다 독립 디렉토리 배정
 ```
 
 ---

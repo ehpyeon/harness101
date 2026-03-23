@@ -39,7 +39,7 @@ Everything was forgotten when the session changed. Jimin muttered:
 
 *"Another new hire."*
 
-That was what she had said when she first met Claude back in Ch00. Since then she had created CLAUDE.md (Ch01), Skills (Ch03), and Rules (Ch05). But all of these were **explicit write-ups of knowledge a human already had in advance**.
+That was what she had said when she first understood the Agent Loop back in Ch01. Since then she had created CLAUDE.md (Ch02), Skills (Ch04), and Rules (Ch08). But all of these were **explicit write-ups of knowledge a human already had in advance**.
 
 What Jimin wants now is different. She wants Claude to **remember what it discovers while working on its own**.
 
@@ -360,15 +360,15 @@ In the next session, the code-reviewer already knows these patterns. The time sp
 ```
 Evolution of the Knowledge layer:
 
-Stage 1: CLAUDE.md (01-CLAUDE-md.md)
+Stage 1: CLAUDE.md (Ch02)
   Static knowledge — written by humans in advance
   "This project is Next.js 14"
 
-Stage 2: Skills (03-skills.md)
+Stage 2: Skills (Ch04)
   On-demand knowledge — loaded when needed
   "When /commit is run → load commit format rules"
 
-Stage 3: Rules (05-rules.md)
+Stage 3: Rules (Ch08)
   Context-based knowledge — selected by situation
   "When modifying TypeScript files → load TS rules"
 

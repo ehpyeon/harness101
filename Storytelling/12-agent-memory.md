@@ -39,7 +39,7 @@ Claude: 네, 먼저 프로젝트를 파악할게요...
 
 *"또 신입사원이야."*
 
-Ch00에서 처음 Claude를 만났을 때 한 말이었다. 그 뒤로 CLAUDE.md(Ch01)를 만들고, Skills(Ch03)를 만들고, Rules(Ch05)를 만들었다. 하지만 이것들은 **사람이 사전에 알고 있는 지식**을 명시적으로 작성한 것이다.
+Ch01에서 처음 Agent Loop를 이해했을 때 한 말이었다. 그 뒤로 CLAUDE.md(Ch02)를 만들고, Skills(Ch04)를 만들고, Rules(Ch08)를 만들었다. 하지만 이것들은 **사람이 사전에 알고 있는 지식**을 명시적으로 작성한 것이다.
 
 지금 지민이 원하는 건 다르다. Claude가 **스스로 일하면서 발견한 것**을 기억하게 하고 싶다.
 
@@ -364,15 +364,15 @@ CLAUDE.md:
 ```
 Knowledge 레이어의 진화:
 
-1단계: CLAUDE.md (01-CLAUDE-md.md)
+1단계: CLAUDE.md (Ch02)
   정적 지식 — 사람이 사전에 작성
   "이 프로젝트는 Next.js 14야"
 
-2단계: Skills (03-skills.md)
+2단계: Skills (Ch04)
   On-demand 지식 — 필요할 때 로드
   "/commit 실행 시 → 커밋 형식 규칙 로드"
 
-3단계: Rules (05-rules.md)
+3단계: Rules (Ch08)
   맥락 기반 지식 — 상황에 따라 선택
   "TypeScript 파일 수정 시 → TS 규칙 로드"
 

@@ -157,7 +157,7 @@ Output tokens:
 ### Input Token Reduction Strategies
 
 ```
-Strategy 1: Micro Compact (Ch10)
+Strategy 1: Micro Compact (Ch11)
   → Replace old tool_results with placeholders
   → Savings: ~3,000 tokens per turn
 
@@ -169,7 +169,7 @@ Strategy 3: Subagent isolation (Ch06)
   → Block exploration noise from parent context
   → Savings: ~20,000 tokens per task
 
-Strategy 4: Strategic /compact (Ch10)
+Strategy 4: Strategic /compact (Ch11)
   → Manual compression after 50 tool calls
   → Savings: ~50,000 tokens (conversation reset)
 

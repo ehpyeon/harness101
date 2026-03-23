@@ -313,7 +313,7 @@ This is proactive agent orchestration.
 
 We've given agents Tools and a Model. But we can also give them **Knowledge**.
 
-The Skills from Ch03 are called by the user with `/commit`.
+The Skills from Ch04 are called by the user with `/commit`.
 But what if you put Knowledge directly inside the agent's `.md` file?
 
 ```

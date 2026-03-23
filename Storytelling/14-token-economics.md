@@ -157,7 +157,7 @@ tools: ["Read", "Grep", "Bash"]
 ### 입력 토큰 절감 전략
 
 ```
-전략 1: Micro Compact (Ch10)
+전략 1: Micro Compact (Ch11)
   → 오래된 tool_result를 플레이스홀더로 교체
   → 절감: 턴당 ~3,000 토큰
 
@@ -169,7 +169,7 @@ tools: ["Read", "Grep", "Bash"]
   → 탐색 노이즈를 부모 컨텍스트에서 차단
   → 절감: 작업당 ~20,000 토큰
 
-전략 4: 전략적 /compact (Ch10)
+전략 4: 전략적 /compact (Ch11)
   → 50회 툴 콜 후 수동 압축
   → 절감: ~50,000 토큰 (대화 초기화)
 

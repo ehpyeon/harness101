@@ -33,9 +33,9 @@ Actual time remaining: 3 days... but other features too.
 
 The problem was this: **Claude can only do one thing at a time.**
 
-Use Subagents (Ch04)? The parent has to wait. Vertical structure. You can delegate code review, but **you can't have frontend and backend implemented simultaneously.**
+Use Subagents (Ch06)? The parent has to wait. Vertical structure. You can delegate code review, but **you can't have frontend and backend implemented simultaneously.**
 
-Use Background Tasks (Ch09)? Only I/O is parallelized. You can write code while `npm install` runs in the background, but **LLM reasoning is still one at a time.**
+Use Background Tasks (Ch07)? Only I/O is parallelized. You can write code while `npm install` runs in the background, but **LLM reasoning is still one at a time.**
 
 What Jimin needed was **multiple Claudes thinking at the same time.**
 
@@ -43,7 +43,7 @@ What Jimin needed was **multiple Claudes thinking at the same time.**
 
 ## The Difference Between Subagent and Teammate
 
-Let's recall the Subagent from Ch04:
+Let's recall the Subagent from Ch06:
 
 ```
 Subagent (vertical):
@@ -65,15 +65,15 @@ Teammate (horizontal):
 
 ---
 
-## Task Board: The Same One from Ch08
+## Task Board: The Same One from Ch05
 
-The "task board" of Agent Teams is the **Task System itself** from Ch08.
+The "task board" of Agent Teams is the **Task System itself** from Ch05.
 
 ```
-Ch08 (solo):
+Ch05 (solo):
   Jimin → Claude → .tasks/task_*.json (read and write alone)
 
-Ch10 (team):
+Ch12 (team):
   Orchestrator  ─┬── .tasks/task_*.json ── shared task board
   backend-agent ──┤   (all agents have access)
   frontend-agent ─┤
@@ -117,7 +117,7 @@ Reading:
   → this is called "drain-on-read" (empty as you read)
 ```
 
-> This is the same principle as the "buzzer" pattern from BackgroundManager in Ch09. Accumulate, then collect all at once when checking.
+> This is the same principle as the "buzzer" pattern from BackgroundManager in Ch07. Accumulate, then collect all at once when checking.
 
 Each agent checks its mailbox before every round of thinking:
 
@@ -366,12 +366,12 @@ All are request-response pairs connected by `request_id`.
 ## Harness Perspective: The Evolution of Context Isolation
 
 ```
-Ch04 (Subagent): vertical isolation
+Ch06 (Subagent): vertical isolation
   Parent → Child (clean context)
   Child → Parent (returns summary)
   Parent waits.
 
-Ch10 (Agent Teams): horizontal isolation
+Ch12 (Agent Teams): horizontal isolation
   Agent A ──┐
   Agent B ──┼── Shared Task Board + Message Bus
   Agent C ──┘

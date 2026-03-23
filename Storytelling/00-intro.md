@@ -200,7 +200,7 @@ Skills가 생겼다
 Task System이 생겼다
     ↓ "컨텍스트가 오염된다"
 Agents가 생겼다
-    ↓ ...13단원까지 계속된다
+    ↓ ...Ch15까지 계속된다
 ```
 
 ### 각 단원의 구조: 캠프파이어 패턴
@@ -233,8 +233,8 @@ Agents가 생겼다
 00 Harness Engineering (여기)
 → 01 Agent Loop → 02 CLAUDE.md → 03 Hooks → 04 Skills
 → 05 Task System → 06 Agents → 07 Background Tasks
-→ 08 Rules → 09 MCPs → 10 Context Compact
-→ 11 Agent Teams → 12 Worktree → 13 Agent Memory
+→ 08 Rules → 09 MCPs → 10 Security → 11 Context Compact
+→ 12 Agent Teams → 13 Worktree → 14 Agent Memory → 15 Token Economics
 ```
 
 ### 특정 문제를 해결하고 싶다면
@@ -250,9 +250,11 @@ Agents가 생겼다
 | 느린 빌드가 Claude를 막는다 | 07 Background Tasks |
 | CLAUDE.md가 너무 길어졌다 | 08 Rules |
 | 외부 서비스(GitHub, DB)를 연결하고 싶다 | 09 MCPs |
-| 컨텍스트가 자꾸 꽉 찬다 | 10 Context Compact |
-| 여러 에이전트를 동시에 쓰고 싶다 | 11, 12 Agent Teams |
-| 에이전트가 배운 것을 기억하게 하고 싶다 | 13 Memory |
+| 보안이 걱정된다 | 10 Security |
+| 컨텍스트가 자꾸 꽉 찬다 | 11 Context Compact |
+| 여러 에이전트를 동시에 쓰고 싶다 | 12, 13 Agent Teams |
+| 에이전트가 배운 것을 기억하게 하고 싶다 | 14 Memory |
+| 비용이 걱정된다 | 15 Token Economics |
 
 ---
 

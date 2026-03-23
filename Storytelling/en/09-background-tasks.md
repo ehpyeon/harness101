@@ -52,7 +52,7 @@ Jimin's launch deadline was approaching. She couldn't afford to throw away those
 
 ## "Why Wait?": A Structural Limitation of the Agent Loop
 
-The cause was in the structure of the Agent Loop (learned in Ch00).
+The cause was in the structure of the Agent Loop (learned in Ch01).
 
 ```python
 def agent_loop(messages):
@@ -252,7 +252,7 @@ As Jimin got comfortable with Background Tasks, she started thinking more boldly
 
 *"Could Claude work on its own overnight?"*
 
-Background Tasks + Headless Mode (the `claude -p` from Ch00) combined create **autonomous loops**.
+Background Tasks + Headless Mode (the `claude -p` from Ch01) combined create **autonomous loops**.
 
 ```
 Evolution of the Agent Loop:
@@ -328,10 +328,10 @@ Context pollution also decreased:
   After:  only completed results enter Context
 ```
 
-Looking back at the Agent Loop journey that started in Ch00:
+Looking back at the Agent Loop journey that started in Ch01:
 
 ```
-Agent Loop (Ch00):  Claude became able to use tools
+Agent Loop (Ch01):  Claude became able to use tools
   → Background Tasks (here): I/O was parallelized
   → Autonomous Loops:         the human stepped out of the loop
 ```

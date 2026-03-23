@@ -200,7 +200,7 @@ Skills emerged
 The Task System emerged
     ↓ "Context keeps getting polluted"
 Agents emerged
-    ↓ ...continues through chapter 13
+    ↓ ...continues through chapter 15
 ```
 
 ### Structure of Each Chapter: The Campfire Pattern
@@ -233,8 +233,8 @@ Read from the beginning, in order. You need to follow the cause-and-effect of th
 00 Harness Engineering (here)
 → 01 Agent Loop → 02 CLAUDE.md → 03 Hooks → 04 Skills
 → 05 Task System → 06 Agents → 07 Background Tasks
-→ 08 Rules → 09 MCPs → 10 Context Compact
-→ 11 Agent Teams → 12 Worktree → 13 Agent Memory
+→ 08 Rules → 09 MCPs → 10 Security → 11 Context Compact
+→ 12 Agent Teams → 13 Worktree → 14 Agent Memory → 15 Token Economics
 ```
 
 ### If You're Trying to Solve a Specific Problem
@@ -250,9 +250,11 @@ Read from the beginning, in order. You need to follow the cause-and-effect of th
 | Slow builds are blocking Claude | 07 Background Tasks |
 | CLAUDE.md has gotten too long | 08 Rules |
 | I want to connect external services (GitHub, DB) | 09 MCPs |
-| Context keeps filling up | 10 Context Compact |
-| I want to use multiple agents simultaneously | 11, 12 Agent Teams |
-| I want the agent to remember what it learned | 13 Memory |
+| I'm worried about security | 10 Security |
+| Context keeps filling up | 11 Context Compact |
+| I want to use multiple agents simultaneously | 12, 13 Agent Teams |
+| I want the agent to remember what it learned | 14 Memory |
+| I'm worried about costs | 15 Token Economics |
 
 ---
 
